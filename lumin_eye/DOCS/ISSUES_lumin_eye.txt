@@ -1,0 +1,21 @@
+1.MAJOR:
+Getting each frame as input and passing it as input to the model produces text respose but ..
+ 1.Output audio should not overlap
+ 2.Sampling period should be sufficiently large
+ 3.CONTINUOUS REPETITION OF SAME DATA SHOULD BE AVOIDED
+ 4.Should probably set some wait time.
+
+2.MAJOR:
+Including ocr with the general caption generation 
+ + deploying them as two separate models and to get the output responses separately from them.
+ - Integrating them into a single model... That checks if any text is available if not it proceeds with caption generation?
+ //Harder method
+ - BUT WILL USINNG THEM AS 2 SEPARATE TFLITE MODELS WORK IN RPI?
+
+ 3.MINOR: Getting input for triggering the record video option.
+
+3.Adding if time permits:
+ + Converting the tensorflow model into tflite model and to deploy it in rpi (edge device)
+  + using picamera for image capture
+  + Sound result produced should be fed into a separate audio output
+  + Or bluetooth module of output voice?
