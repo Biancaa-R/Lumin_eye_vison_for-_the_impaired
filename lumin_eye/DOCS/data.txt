@@ -1,0 +1,23 @@
+Functions:
+
+tf.keras.layers.TextVectorization(
+    max_tokens=None,
+    standardize='lower_and_strip_punctuation',
+    split='whitespace',
+    ngrams=None,
+    output_mode='int',
+    output_sequence_length=None,
+    pad_to_max_tokens=False,
+    vocabulary=None,
+    idf_weights=None,
+    sparse=False,
+    ragged=False,
+    encoding='utf-8',
+    **kwargs
+)
+This layer has basic options for managing text in a Keras model. It transforms a batch of strings (one example = one string) into either a
+ list of token indices (one example = 1D tensor of integer token indices) or a dense representation (one example = 1D tensor of float values 
+representing data about the example's tokens). This layer is meant to handle natural language inputs. To handle simple string
+ inputs (categorical strings or pre-tokenized strings) see tf.keras.layers.StringLookup.
+
+ 

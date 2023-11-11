@@ -19,3 +19,36 @@ Including ocr with the general caption generation
   + using picamera for image capture
   + Sound result produced should be fed into a separate audio output
   + Or bluetooth module of output voice?
+
+4.MINOR:(FIXED)
+Tf file to tflite file conversion error:
+1. From the official video:
+tensorflow.contrib was not importable even after installing tflite,tf,tensorflow_qnd..
+therefore
+#converter =lite.TFliteConverter.from_keras_model(model)
+was used but
+module 'tensorflow._api.v2.lite' has no attribute 'TFliteConverter',
+AttributeError: 'str' object has no attribute 'call' tflite converter
+
+IMP:
+converter.experimental_new_converter = True
+WARNING:absl:Please consider switching to the new converter by setting experimental_new_converter=True. 
+The old converter is deprecated.
+
+#converter = lite.TFLiteConverter.from_saved_model("C:\\Users\\Biancaa. R\\lumin_eye\\model1.h5")
+or
+#converter = lite.TFLiteConverter.from_saved_model("C:\\Users\\Biancaa. R\\lumin_eye")
+says model not found at the specified location
+
+//Incase this is not given it doesnt work even when providing the name of hdf5 file:
+model=keras.models.load_model("model1.h5")
+
+//if not providing:
+#converter.target_spec.supported_ops = [lite.OpsSet.TFLITE_BUILTINS, lite.OpsSet.SELECT_TF_OPS]
+
+ error: 'tf.TensorListReserve' op requires element_shape to be static during TF Lite transformation pass
+<unknown>:0: note: loc(fused["StatefulPartitionedCall:", "StatefulPartitionedCall"]): called from
+d:\Anaconda\Lib\site-packages\tensorflow\python\saved_model\save.py:1313:0: error: failed to legalize operation 'tf.TensorListReserve' that was explicitly marked illegal
+<unknown>:0: note: loc(fused["StatefulPartitionedCall:", "StatefulPartitionedCall"]): called from
+<unknown>:0: error: Lowering tensor list ops is failed. Please consider using Select TF ops and disabling `_experimental_lower_tensor_list_ops` flag in the TFLite converter object. For example, converter.target_spec.supported_ops = [tf.lite.OpsSet.TFLITE_BUILTINS, 
+tf.lite.OpsSet.SELECT_TF_OPS]\n converter._experimental_lower_tensor_list_ops = False
