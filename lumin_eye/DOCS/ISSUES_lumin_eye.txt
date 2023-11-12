@@ -52,3 +52,28 @@ d:\Anaconda\Lib\site-packages\tensorflow\python\saved_model\save.py:1313:0: erro
 <unknown>:0: note: loc(fused["StatefulPartitionedCall:", "StatefulPartitionedCall"]): called from
 <unknown>:0: error: Lowering tensor list ops is failed. Please consider using Select TF ops and disabling `_experimental_lower_tensor_list_ops` flag in the TFLite converter object. For example, converter.target_spec.supported_ops = [tf.lite.OpsSet.TFLITE_BUILTINS, 
 tf.lite.OpsSet.SELECT_TF_OPS]\n converter._experimental_lower_tensor_list_ops = False
+
+5.MINOR (fixed): the indices for iterations should be integers not string
+//load the features from the .pkl file not from txt
+
+6.MAJOR(HUGE):<FIXED>
+The desired output was not provided by the caption generator
+eg. <start> Two dogs playing with a ball end end end end end...
+reasons:
+#usage of wrong start stop delimiters
+# each time the program ran new delimiters were added
+
+(it was taken care of)
+
+Incase the correct delimiters were used..
+ex dogs dogs dogs dogs dogs....
+(
+  could be because of we should rerun the epoches after the changes
+  <start>,<stop> special characters are getting removed as well
+)
+
+FIX:
+Therefore the delimiters are changed to startseq and endseq
+
+BUT:
+A lot of "other" is included and the sentences are not gramatically right
