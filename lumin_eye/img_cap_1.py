@@ -120,7 +120,11 @@ vgg_model = Model(inputs=vgg_model.inputs,
 image_path = "C:\\Users\\Biancaa. R\\Downloads\\1.jpg"
 #"C:\Users\Biancaa. R\Downloads\WhatsApp Image 2023-11-09 at 4.02.42 PM.jpeg"
 # load image
+iterations=1
 import time
+import pyttsx3
+#Making python speak your desired text
+node = pyttsx3.init()#invoke function
 cap = cv2.VideoCapture(0)
 while True:
     ret, image = cap.read()
@@ -138,10 +142,19 @@ while True:
     feature = vgg_model.predict(image, verbose=0)
     # predict from the trained model
     value=predict_caption(model, feature, tokenizer, max_length)
-    print(value)
+    #print(value)
     #cv2.imshow('Processed Image', image)
+    if(iterations%2==0):
+        try:
+            node.say(value)
+            node.runAndWait()
+            node.stop()
+            print("Successful")
+        except:
+            print("something went wrong")
 
     # Break the loop if 'q' is pressed
+    iterations+=1
     if cv2.waitKey(1) & 0xFF == ord('q'):
         break
 
