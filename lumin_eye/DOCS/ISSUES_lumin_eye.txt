@@ -77,3 +77,14 @@ Therefore the delimiters are changed to startseq and endseq
 
 BUT:
 A lot of "other" is included and the sentences are not gramatically right
+The caption describing the same object/person is getting repeated as and,and..
+
+OUTPUTS OF webcam:
+startseq picture of young woman in black shirt and hp is sitting on wall with beer and backpack behind him and woman behind him 's vista in her mouth and woman in black jacket and
+startseq banner man with sunglasses and glasses is handrails her arms out of the camera while another man looks on logs right of her doorway on logs side of him and person in black jacket
+startseq banner man with glasses and 'n' is handrails her arms around her arms and smiles at the camera while another man looks on logs right of her doorway on logs right of her neck
+startseq banner man with glasses and 'n' is handrails her arms around her arms and smiles at the camera while another man looks on logs right of her eyes and he can sheet faces to
+startseq banner man with glasses and 'n' is handrails her arms around her arms and smiles at the camera while another man looks on logs right of her doorway on logs right of her neck
+startseq banner man with glasses and 'n' is handrails her arms around her arms and smiles at the camera while another man looks on logs right of her doorway on logs side of him and
+startseq banner man with glasses and 'n' is handrails her arms out of the camera while another man looks on logs right of her doorway on logs side of him and woman in black jacket
+startseq banner man with glasses and 'n' is handrails her arms out of her head while another man looks on logs side of him and leather calf logs right while he 's eyes can behind
