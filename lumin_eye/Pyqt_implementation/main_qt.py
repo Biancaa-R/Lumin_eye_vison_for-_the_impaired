@@ -18,7 +18,7 @@ pytesseract.pytesseract.tesseract_cmd=r'D:\tesseract\tesseract.exe'
 
 from datetime import datetime
 import time
-'''MariaDB [library]> select * from login_info
+'''MariaDB [envision]> select * from login_info
     -> ;
 +-----------+-----------+----------+
 | name      | username  | password |
