@@ -10,14 +10,18 @@ def exec(dbuser, dbpass):
                 host = "localhost",
                 user = dbuser,            
                 password = dbpass,
-                database="library"
+                database="envision"
             )
 
     cursor = mydb.cursor()
+    '''MariaDB [envision]> CREATE TABLE envision.login_info SELECT * FROM library.login_info;
+        Query OK, 5 rows affected (0.064 sec)
+        Records: 5  Duplicates: 0  Warnings: 0
+        '''
     
     #Creating database
-    cursor.execute("CREATE DATABASE IF NOT EXISTS library")
-    cursor.execute("USE library")
+    cursor.execute("CREATE DATABASE IF NOT EXISTS envision")
+    cursor.execute("USE envision")
 
     #Creating login table
     cursor.execute("""CREATE TABLE IF NOT EXISTS login_info
@@ -26,4 +30,6 @@ def exec(dbuser, dbpass):
     password VARCHAR(30) NOT NULL)""")
     mydb.commit()
 
-   
+
+
+

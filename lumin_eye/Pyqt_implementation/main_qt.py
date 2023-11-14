@@ -176,7 +176,7 @@ mydb = mysql.connector.connect(
     host = "localhost",
     user = dbuser,            
     password = dbpass,
-    database = "library"
+    database = "envision"
     )
          
 cursor = mydb.cursor()
