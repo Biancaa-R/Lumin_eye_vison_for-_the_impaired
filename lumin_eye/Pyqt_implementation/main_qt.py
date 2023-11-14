@@ -14,11 +14,11 @@ import numpy as np
 import cv2
 import pytesseract
 import os
+import datetime
 pytesseract.pytesseract.tesseract_cmd=r'D:\tesseract\tesseract.exe'
 
-from datetime import datetime
 import time
-'''MariaDB [envision]> select * from login_info
+'''MariaDB [library]> select * from login_info
     -> ;
 +-----------+-----------+----------+
 | name      | username  | password |
@@ -287,6 +287,8 @@ class DashScreen(QDialog):
         self.rec2.clicked.connect(self.gotostoprec)
         self.ocr_1.clicked.connect(self.gotoocr)
         self.ocr_2.clicked.connect(self.gotostopocr)
+        self.show.clicked.connect(self.gotoshow)
+
     def gotosignup(self):
         signup=SignupScreen()
         widget.addWidget(signup)
@@ -302,7 +304,12 @@ class DashScreen(QDialog):
         cap.set(4,480)
 
         fourcc = cv2.VideoWriter_fourcc(*'MP4V') #MP4V codec,
-        out = cv2.VideoWriter('output.mp4', fourcc, 20.0, (640,480))
+        path_folder = 'C:\\Users\\Biancaa. R\\lumin_eye\\saved'
+        os.chdir(path_folder)
+        ts = (datetime.datetime.now()).strftime("%Y_%m_%d_%H_%M_%S")
+        path = 'C:\\Users\\Biancaa. R\\lumin_eye\\saved\\output_{}.mp4'.format(ts)
+        print(path)
+        out = cv2.VideoWriter(path, fourcc, 20.0, (640,480))
 
         while(True):
             ret, frame = cap.read()
@@ -415,6 +422,14 @@ class DashScreen(QDialog):
         global vid
         self.label.setText("camera object is stopped")
         vid=True
+
+    def gotoshow(self):
+        # Opening  a folder using cmd
+
+        import os
+        path="C:\\Users\\Biancaa. R\\lumin_eye\\saved"
+        os.system("explorer.exe "+path)
+        #Used for showing all the videos recorded in one location
 
 
 

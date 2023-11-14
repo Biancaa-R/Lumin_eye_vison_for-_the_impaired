@@ -7,7 +7,7 @@
     <x>0</x>
     <y>0</y>
     <width>1171</width>
-    <height>815</height>
+    <height>947</height>
    </rect>
   </property>
   <property name="sizePolicy">
@@ -113,6 +113,24 @@
             </spacer>
            </item>
           </layout>
+         </item>
+         <item>
+          <widget class="QPushButton" name="show">
+           <property name="minimumSize">
+            <size>
+             <width>300</width>
+             <height>100</height>
+            </size>
+           </property>
+           <property name="styleSheet">
+            <string notr="true">font: 18pt &quot;Calibri&quot;;
+color:rgb(255, 255, 255);
+background-color:rgb(144, 144, 144);</string>
+           </property>
+           <property name="text">
+            <string>SAVED FILES</string>
+           </property>
+          </widget>
          </item>
          <item>
           <widget class="QPushButton" name="ocr_1">
