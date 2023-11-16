@@ -1,0 +1,39 @@
+1.(MAJOR):
+In case of Navigation using complete sentences will not work
+#Have another mode where the instructions are given as phrases or words:
+Initial considerations: Use of object detection 
++Where only the object is detected and the "name" of detected object is given as the output
++ Could be used for having a quick scan of what is happening around them #Very short span of time
+
+Should be definite:
+For the blind to be independent and not relying on anyone:
+Like 	*angle measurement
+	*distance measurement
+	*speed mesuring 
+	Therefore realistic idea about the surrounding will aid in navigation.
+
+Eg On 5 meters straight there is a right turn leading to...
+
+Examples given:
+- Obstracle detection in roads etc,
+- Seat finding in a theatre Where the seat numbers should also be taken into account for the blind to navigate smoothly.
+
+Probably:
+ ! Taking inputs from the user 
+	@ Giving suggestions to the blind
+! Searching lost objects:
+Blind input--- I am searching for a fricking blue cap
+
+Problem:
+It doesnt feel inclusive ...Like either it is different modes which limits the functionality 
+The output of different models should not overlap with each other.
+
+Maybe (para phrasing by using existing models to improve the accuracy of caption generation?)
+#Suggestion 
+Lot of nlp models are available that process textual data
+eg. LAMA by facebook(regenerative ai)
+
+Its better to go with gen ai models
+# Team text processing didnt even train models -used pretrained models ,regenerative learning
+# Automatically the accuracy increases.
+# BRUHH (not me)
