@@ -318,12 +318,12 @@ class DashScreen(QDialog):
             #c = cv2.waitKey(1)
             #if c & 0xFF == ord('q'):
             if cv2.waitKey(1)==ord('q') or vid==True:
-                cap.release()
-                cv2.destroyAllWindows()
                 break
         cap.release()
         out.release() #closes the output video file
         cv2.destroyAllWindows()
+        path_folder = 'C:\\Users\\Biancaa. R\\lumin_eye\\'
+        os.chdir(path_folder)
 
     def gotostoprec(self):
             global vid
@@ -358,10 +358,10 @@ class DashScreen(QDialog):
             value=predict_caption(model, feature, tokenizer, max_length)
             print(value)
             #cv2.imshow('Processed Image', image)
-            if(iterations%2==0):
+            if(iterations%5==0):
                 try:
                     node.say(value)
-                    node.runAndWait()
+                    node.runAndWait()#for running serially without overlap
                     node.stop()
                     print("Successful")
                 except:
@@ -401,16 +401,17 @@ class DashScreen(QDialog):
         while(True):
             
             ret, frame = cap.read()
+            
             scanned_text = pytesseract.image_to_string(frame)
-            scanned_text=scanned_text[:-2] #STORES TEXT
+            scanned_text=scanned_text[:-2] #STORES TEXT square symbol
             print(scanned_text)
             #OUTPUT DIRECTORY FOR TEXT FILE STORAGE
- 
-            out_file.write(scanned_text)
             cv2.imshow('frame', frame)
+            out_file.write(scanned_text)
+            
             #c = cv2.waitKey(1)
             #if c & 0xFF == ord('q'):
-            if cv2.waitKey(1)==ord('q') and vid==True: 
+            if cv2.waitKey(1) ==ord('q') or vid==True: 
                 break
             
         cap.release()
