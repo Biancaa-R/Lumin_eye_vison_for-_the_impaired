@@ -10,7 +10,7 @@ Including ocr with the general caption generation
  + deploying them as two separate models and to get the output responses separately from them.
  - Integrating them into a single model... That checks if any text is available if not it proceeds with caption generation?
  //Harder method
- - BUT WILL USINNG THEM AS 2 SEPARATE TFLITE MODELS WORK IN RPI?
+ - BUT WILL USINNG THEM AS 2 SEPARATE TFLITE MODELS WORK IN RPI?(YES)
 
  3.MINOR: Getting input for triggering the record video option.
 
@@ -87,3 +87,8 @@ Threfore processing should be done but not all displayed?
 
 HOW:
 Showing the op of only even iterations as audio
+
+7.Accuracy of the model (image recognition ) is low but can be improved by adding more datasets and training the model in a better way so that 
+=The sentences are consize
+-The accuracy is more
+-IMPORTANT THINGS are focused on...
