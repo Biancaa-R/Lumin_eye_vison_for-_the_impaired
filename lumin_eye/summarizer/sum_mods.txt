@@ -1,0 +1,157 @@
+D:\>pip install gensim
+Collecting gensim
+  Obtaining dependency information for gensim from https://files.pythonhosted.org/packages/ad/97/b8253236dfedb9094f4273393a3fd03997da81f27f15822e56128da894ae/gensim-4.3.2-cp311-cp311-win_amd64.whl.metadata
+  Downloading gensim-4.3.2-cp311-cp311-win_amd64.whl.metadata (8.5 kB)
+Requirement already satisfied: numpy>=1.18.5 in d:\lib\site-packages (from gensim) (1.24.2)
+Requirement already satisfied: scipy>=1.7.0 in d:\lib\site-packages (from gensim) (1.11.2)
+Collecting smart-open>=1.8.1 (from gensim)
+  Obtaining dependency information for smart-open>=1.8.1 from https://files.pythonhosted.org/packages/fc/d9/d97f1db64b09278aba64e8c81b5d322d436132df5741c518f3823824fae0/smart_open-6.4.0-py3-none-any.whl.metadata
+  Downloading smart_open-6.4.0-py3-none-any.whl.metadata (21 kB)
+Downloading gensim-4.3.2-cp311-cp311-win_amd64.whl (24.0 MB)
+   ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 24.0/24.0 MB 990.2 kB/s eta 0:00:00
+Downloading smart_open-6.4.0-py3-none-any.whl (57 kB)
+   ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 57.0/57.0 kB 600.1 kB/s eta 0:00:00
+Installing collected packages: smart-open, gensim
+Successfully installed gensim-4.3.2 smart-open-6.4.0
+
+[notice] A new release of pip is available: 23.2.1 -> 23.3.2
+[notice] To update, run: python.exe -m pip install --upgrade pip
+
+[notice] A new release of pip is available: 23.2.1 -> 23.3.2
+[notice] To update, run: python.exe -m pip install --upgrade pip
+
+D:\>pip install -U pip setuptools wheel
+Requirement already satisfied: pip in d:\lib\site-packages (23.2.1)
+Collecting pip
+  Obtaining dependency information for pip from https://files.pythonhosted.org/packages/8a/6a/19e9fe04fca059ccf770861c7d5721ab4c2aebc539889e97c7977528a53b/pip-24.0-py3-none-any.whl.metadata
+  Downloading pip-24.0-py3-none-any.whl.metadata (3.6 kB)
+Requirement already satisfied: setuptools in d:\lib\site-packages (50.2.0)
+Collecting setuptools
+  Obtaining dependency information for setuptools from https://files.pythonhosted.org/packages/55/3a/5121b58b578a598b269537e09a316ad2a94fdd561a2c6eb75cd68578cc6b/setuptools-69.0.3-py3-none-any.whl.metadata
+  Using cached setuptools-69.0.3-py3-none-any.whl.metadata (6.3 kB)
+Requirement already satisfied: wheel in d:\lib\site-packages (0.41.2)
+Collecting wheel
+  Obtaining dependency information for wheel from https://files.pythonhosted.org/packages/c7/c3/55076fc728723ef927521abaa1955213d094933dc36d4a2008d5101e1af5/wheel-0.42.0-py3-none-any.whl.metadata
+  Using cached wheel-0.42.0-py3-none-any.whl.metadata (2.2 kB)
+Downloading pip-24.0-py3-none-any.whl (2.1 MB)
+   ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 2.1/2.1 MB 960.2 kB/s eta 0:00:00
+Using cached setuptools-69.0.3-py3-none-any.whl (819 kB)
+Using cached wheel-0.42.0-py3-none-any.whl (65 kB)
+ERROR: To modify pip, please run the following command:
+D:\python.exe -m pip install -U pip setuptools wheel
+
+[notice] A new release of pip is available: 23.2.1 -> 23.3.2
+[notice] To update, run: python.exe -m pip install --upgrade pip
+
+D:\>pip install spacy
+Collecting spacy
+  Obtaining dependency information for spacy from https://files.pythonhosted.org/packages/90/f0/0133b684e18932c7bf4075d94819746cee2c0329f2569db526b0fa1df1df/spacy-3.7.2-cp311-cp311-win_amd64.whl.metadata
+  Downloading spacy-3.7.2-cp311-cp311-win_amd64.whl.metadata (26 kB)
+Collecting spacy-legacy<3.1.0,>=3.0.11 (from spacy)
+  Downloading spacy_legacy-3.0.12-py2.py3-none-any.whl (29 kB)
+Collecting spacy-loggers<2.0.0,>=1.0.0 (from spacy)
+  Obtaining dependency information for spacy-loggers<2.0.0,>=1.0.0 from https://files.pythonhosted.org/packages/33/78/d1a1a026ef3af911159398c939b1509d5c36fe524c7b644f34a5146c4e16/spacy_loggers-1.0.5-py3-none-any.whl.metadata
+  Downloading spacy_loggers-1.0.5-py3-none-any.whl.metadata (23 kB)
+Collecting murmurhash<1.1.0,>=0.28.0 (from spacy)
+  Obtaining dependency information for murmurhash<1.1.0,>=0.28.0 from https://files.pythonhosted.org/packages/71/46/af01a20ec368bd9cb49a1d2df15e3eca113bbf6952cc1f2a47f1c6801a7f/murmurhash-1.0.10-cp311-cp311-win_amd64.whl.metadata
+  Downloading murmurhash-1.0.10-cp311-cp311-win_amd64.whl.metadata (2.0 kB)
+Collecting cymem<2.1.0,>=2.0.2 (from spacy)
+  Obtaining dependency information for cymem<2.1.0,>=2.0.2 from https://files.pythonhosted.org/packages/c1/c3/dd044e6f62a3d317c461f6f0c153c6573ed13025752d779e514000c15dd2/cymem-2.0.8-cp311-cp311-win_amd64.whl.metadata
+  Downloading cymem-2.0.8-cp311-cp311-win_amd64.whl.metadata (8.6 kB)
+Collecting preshed<3.1.0,>=3.0.2 (from spacy)
+  Obtaining dependency information for preshed<3.1.0,>=3.0.2 from https://files.pythonhosted.org/packages/e4/fc/78cdbdb79f5d6d45949e72c32445d6c060977ad50a1dcfc0392622165f7c/preshed-3.0.9-cp311-cp311-win_amd64.whl.metadata
+  Downloading preshed-3.0.9-cp311-cp311-win_amd64.whl.metadata (2.2 kB)
+Collecting thinc<8.3.0,>=8.1.8 (from spacy)
+  Obtaining dependency information for thinc<8.3.0,>=8.1.8 from https://files.pythonhosted.org/packages/74/24/564a7df5b1fac0520f6b55137deea2cc0b6f7d6e66228f1645dbfd59bb33/thinc-8.2.2-cp311-cp311-win_amd64.whl.metadata
+  Downloading thinc-8.2.2-cp311-cp311-win_amd64.whl.metadata (15 kB)
+Collecting wasabi<1.2.0,>=0.9.1 (from spacy)
+  Obtaining dependency information for wasabi<1.2.0,>=0.9.1 from https://files.pythonhosted.org/packages/8f/69/26cbf0bad11703241cb84d5324d868097f7a8faf2f1888354dac8883f3fc/wasabi-1.1.2-py3-none-any.whl.metadata
+  Downloading wasabi-1.1.2-py3-none-any.whl.metadata (28 kB)
+Collecting srsly<3.0.0,>=2.4.3 (from spacy)
+  Obtaining dependency information for srsly<3.0.0,>=2.4.3 from https://files.pythonhosted.org/packages/eb/f5/e3f29993f673d91623df6413ba64e815dd2676fd7932cbc5e7347402ddae/srsly-2.4.8-cp311-cp311-win_amd64.whl.metadata
+  Downloading srsly-2.4.8-cp311-cp311-win_amd64.whl.metadata (20 kB)
+Collecting catalogue<2.1.0,>=2.0.6 (from spacy)
+  Obtaining dependency information for catalogue<2.1.0,>=2.0.6 from https://files.pythonhosted.org/packages/9e/96/d32b941a501ab566a16358d68b6eb4e4acc373fab3c3c4d7d9e649f7b4bb/catalogue-2.0.10-py3-none-any.whl.metadata
+  Downloading catalogue-2.0.10-py3-none-any.whl.metadata (14 kB)
+Collecting weasel<0.4.0,>=0.1.0 (from spacy)
+  Obtaining dependency information for weasel<0.4.0,>=0.1.0 from https://files.pythonhosted.org/packages/d5/e5/b63b8e255d89ba4155972990d42523251d4d1368c4906c646597f63870e2/weasel-0.3.4-py3-none-any.whl.metadata
+  Downloading weasel-0.3.4-py3-none-any.whl.metadata (4.7 kB)
+Collecting typer<0.10.0,>=0.3.0 (from spacy)
+  Downloading typer-0.9.0-py3-none-any.whl (45 kB)
+     ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 45.9/45.9 kB 1.1 MB/s eta 0:00:00
+Requirement already satisfied: smart-open<7.0.0,>=5.2.1 in d:\lib\site-packages (from spacy) (6.4.0)
+Requirement already satisfied: tqdm<5.0.0,>=4.38.0 in d:\lib\site-packages (from spacy) (4.66.1)
+Requirement already satisfied: requests<3.0.0,>=2.13.0 in d:\lib\site-packages (from spacy) (2.28.2)
+Collecting pydantic!=1.8,!=1.8.1,<3.0.0,>=1.7.4 (from spacy)
+  Obtaining dependency information for pydantic!=1.8,!=1.8.1,<3.0.0,>=1.7.4 from https://files.pythonhosted.org/packages/db/dc/afecbd9650f486889181c6d1a0d675b580c06253ea7e304588e4c7485bdb/pydantic-2.6.1-py3-none-any.whl.metadata
+  Downloading pydantic-2.6.1-py3-none-any.whl.metadata (83 kB)
+     ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 83.5/83.5 kB 787.5 kB/s eta 0:00:00
+Requirement already satisfied: jinja2 in d:\lib\site-packages (from spacy) (3.1.2)
+Requirement already satisfied: setuptools in d:\lib\site-packages (from spacy) (50.2.0)
+Requirement already satisfied: packaging>=20.0 in d:\lib\site-packages (from spacy) (23.1)
+Collecting langcodes<4.0.0,>=3.2.0 (from spacy)
+  Downloading langcodes-3.3.0-py3-none-any.whl (181 kB)
+     ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 181.6/181.6 kB 732.5 kB/s eta 0:00:00
+Requirement already satisfied: numpy>=1.19.0 in d:\lib\site-packages (from spacy) (1.24.2)
+Collecting annotated-types>=0.4.0 (from pydantic!=1.8,!=1.8.1,<3.0.0,>=1.7.4->spacy)
+  Obtaining dependency information for annotated-types>=0.4.0 from https://files.pythonhosted.org/packages/28/78/d31230046e58c207284c6b2c4e8d96e6d3cb4e52354721b944d3e1ee4aa5/annotated_types-0.6.0-py3-none-any.whl.metadata
+  Downloading annotated_types-0.6.0-py3-none-any.whl.metadata (12 kB)
+Collecting pydantic-core==2.16.2 (from pydantic!=1.8,!=1.8.1,<3.0.0,>=1.7.4->spacy)
+  Obtaining dependency information for pydantic-core==2.16.2 from https://files.pythonhosted.org/packages/cb/5a/c8fdc6369f7b00ef15c97ec5c2d092e10f112982ea3747f364f2141e3702/pydantic_core-2.16.2-cp311-none-win_amd64.whl.metadata
+  Downloading pydantic_core-2.16.2-cp311-none-win_amd64.whl.metadata (6.6 kB)
+Collecting typing-extensions>=4.6.1 (from pydantic!=1.8,!=1.8.1,<3.0.0,>=1.7.4->spacy)
+  Obtaining dependency information for typing-extensions>=4.6.1 from https://files.pythonhosted.org/packages/b7/f4/6a90020cd2d93349b442bfcb657d0dc91eee65491600b2cb1d388bc98e6b/typing_extensions-4.9.0-py3-none-any.whl.metadata
+  Downloading typing_extensions-4.9.0-py3-none-any.whl.metadata (3.0 kB)
+Requirement already satisfied: charset-normalizer<4,>=2 in d:\lib\site-packages (from requests<3.0.0,>=2.13.0->spacy) (3.0.1)
+Requirement already satisfied: idna<4,>=2.5 in d:\lib\site-packages (from requests<3.0.0,>=2.13.0->spacy) (3.4)
+Requirement already satisfied: urllib3<1.27,>=1.21.1 in d:\lib\site-packages (from requests<3.0.0,>=2.13.0->spacy) (1.26.14)
+Requirement already satisfied: certifi>=2017.4.17 in d:\lib\site-packages (from requests<3.0.0,>=2.13.0->spacy) (2022.12.7)
+Collecting blis<0.8.0,>=0.7.8 (from thinc<8.3.0,>=8.1.8->spacy)
+  Obtaining dependency information for blis<0.8.0,>=0.7.8 from https://files.pythonhosted.org/packages/2f/09/da0592c74560cc33396504698122f7a56747c82a5e072ca7d2c3397898e1/blis-0.7.11-cp311-cp311-win_amd64.whl.metadata
+  Downloading blis-0.7.11-cp311-cp311-win_amd64.whl.metadata (7.6 kB)
+Collecting confection<1.0.0,>=0.0.1 (from thinc<8.3.0,>=8.1.8->spacy)
+  Obtaining dependency information for confection<1.0.0,>=0.0.1 from https://files.pythonhosted.org/packages/39/78/f9d18da7b979a2e6007bfcea2f3c8cc02ed210538ae1ce7e69092aed7b18/confection-0.1.4-py3-none-any.whl.metadata
+  Downloading confection-0.1.4-py3-none-any.whl.metadata (19 kB)
+Requirement already satisfied: colorama in d:\lib\site-packages (from tqdm<5.0.0,>=4.38.0->spacy) (0.4.6)
+Requirement already satisfied: click<9.0.0,>=7.1.1 in d:\lib\site-packages (from typer<0.10.0,>=0.3.0->spacy) (8.1.3)
+Collecting cloudpathlib<0.17.0,>=0.7.0 (from weasel<0.4.0,>=0.1.0->spacy)
+  Obtaining dependency information for cloudpathlib<0.17.0,>=0.7.0 from https://files.pythonhosted.org/packages/0f/6e/45b57a7d4573d85d0b0a39d99673dc1f5eea9d92a1a4603b35e968fbf89a/cloudpathlib-0.16.0-py3-none-any.whl.metadata
+  Downloading cloudpathlib-0.16.0-py3-none-any.whl.metadata (14 kB)
+Requirement already satisfied: MarkupSafe>=2.0 in d:\lib\site-packages (from jinja2->spacy) (2.1.1)
+Downloading spacy-3.7.2-cp311-cp311-win_amd64.whl (12.1 MB)
+   ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 12.1/12.1 MB 869.8 kB/s eta 0:00:00
+Downloading catalogue-2.0.10-py3-none-any.whl (17 kB)
+Downloading cymem-2.0.8-cp311-cp311-win_amd64.whl (39 kB)
+Downloading murmurhash-1.0.10-cp311-cp311-win_amd64.whl (25 kB)
+Downloading preshed-3.0.9-cp311-cp311-win_amd64.whl (122 kB)
+   ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 122.3/122.3 kB 1.0 MB/s eta 0:00:00
+Downloading pydantic-2.6.1-py3-none-any.whl (394 kB)
+   ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 394.8/394.8 kB 683.1 kB/s eta 0:00:00
+Downloading pydantic_core-2.16.2-cp311-none-win_amd64.whl (1.9 MB)
+   ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 1.9/1.9 MB 849.7 kB/s eta 0:00:00
+Downloading spacy_loggers-1.0.5-py3-none-any.whl (22 kB)
+Downloading srsly-2.4.8-cp311-cp311-win_amd64.whl (479 kB)
+   ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 479.7/479.7 kB 939.0 kB/s eta 0:00:00
+Downloading thinc-8.2.2-cp311-cp311-win_amd64.whl (1.5 MB)
+   ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 1.5/1.5 MB 904.5 kB/s eta 0:00:00
+Downloading wasabi-1.1.2-py3-none-any.whl (27 kB)
+Downloading weasel-0.3.4-py3-none-any.whl (50 kB)
+   ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 50.1/50.1 kB 632.8 kB/s eta 0:00:00
+Downloading annotated_types-0.6.0-py3-none-any.whl (12 kB)
+Downloading blis-0.7.11-cp311-cp311-win_amd64.whl (6.6 MB)
+   ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 6.6/6.6 MB 866.3 kB/s eta 0:00:00
+Downloading cloudpathlib-0.16.0-py3-none-any.whl (45 kB)
+   ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 45.0/45.0 kB 445.9 kB/s eta 0:00:00
+Downloading confection-0.1.4-py3-none-any.whl (35 kB)
+Downloading typing_extensions-4.9.0-py3-none-any.whl (32 kB)
+Installing collected packages: cymem, wasabi, typing-extensions, spacy-loggers, spacy-legacy, murmurhash, langcodes, cloudpathlib, catalogue, blis, annotated-types, typer, srsly, pydantic-core, preshed, pydantic, confection, weasel, thinc, spacy
+  Attempting uninstall: typing-extensions
+    Found existing installation: typing_extensions 4.5.0
+    Uninstalling typing_extensions-4.5.0:
+      Successfully uninstalled typing_extensions-4.5.0
+ERROR: pip's dependency resolver does not currently take into account all the packages that are installed. This behaviour is the source of the following dependency conflicts.
+tensorflow-intel 2.13.0 requires typing-extensions<4.6.0,>=3.6.6, but you have typing-extensions 4.9.0 which is incompatible.
+Successfully installed annotated-types-0.6.0 blis-0.7.11 catalogue-2.0.10 cloudpathlib-0.16.0 confection-0.1.4 cymem-2.0.8 langcodes-3.3.0 murmurhash-1.0.10 preshed-3.0.9 pydantic-2.6.1 pydantic-core-2.16.2 spacy-3.7.2 spacy-legacy-3.0.12 spacy-loggers-1.0.5 srsly-2.4.8 thinc-8.2.2 typer-0.9.0 typing-extensions-4.7.1 wasabi-1.1.2 weasel-0.3.4
+
+[notice] A new release of pip is available: 23.2.1 -> 23.3.2
+[notice] To update, run: python.exe -m pip install --upgrade pip
